@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
@@ -7,17 +6,28 @@ import About from "./components/About";
 import "./style.css";
 import "./mediaqueries.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Blog from "./pages/Blog";
+function Home() {
+  return (
+    <>
+      <Profile />
+      <About />
+      <Projects />
+      <Contact />
+    </>
+  );
+}
 
 function App() {
   return (
-      <>
-          <Navbar />
-          <Profile />
-          <About />
-          <Projects />
-          <Contact />
-      </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
   );
 }
 

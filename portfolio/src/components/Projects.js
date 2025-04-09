@@ -9,18 +9,21 @@ const projects = [
         id: 1, 
         title: "Manufacturing ERP", 
         img: "/assets/projects/smrfs/google-form-integration.gif",
-        badges: ["#DOTNET", "#FULLSTACK"] 
+        badges: ["#DOTNET", "#FULLSTACK"],
+        url: "https://goldenrod-attic-1f4.notion.site/SMRFS-Project-Details-178e58da9d49806daf1aff03cf6861b1" 
     },
     { 
         id: 2, 
-        title: "Project 2", 
-        img: "/assets/projects/smrfs/google-form-integration.gif",
+        title: "Workorder Automation", 
+        img: "/assets/projects/workorder-automation/main.gif",
         badges: ["#DOTNET","#FULLSTACK"],
+        url: "https://github.com/jyooDev/reslife_workorder" 
     },
     { id: 3, 
-        title: "Project 3", 
-        img: "/assets/projects/smrfs/google-form-integration.gif",
-        badges: ["#EMBEDDED C"] 
+        title: "Self Driving Trackbot", 
+        img: "/assets/projects/trackbot/trackbot.png",
+        badges: ["#EMBEDDED C", "#SIGNAL PROCESSING"],
+        url: "https://github.com/jyooDev/trackbot"  
     },
 ];
 
@@ -29,8 +32,7 @@ const Projects = () => {
         <section id="project">
             <h2 className="section__text__p1">Projects</h2>
             <span className="line"></span>
-            <div className="swiper project-container">
-                <Swiper className="project-wrapper"
+                <Swiper
                 modules={[Navigation, Pagination]}
                 loop={true}
                 spaceBetween={20}
@@ -51,7 +53,7 @@ const Projects = () => {
                 }>                   
                         {projects.map((project) => (
                         <SwiperSlide key={project.id} className="project-list">
-                            <a className="project-link" href="">
+                            <a className="project-link" href={project.url}>
                                 <img className="project-image" src={project.img} alt={project.title} />
                                 <div className="project-badge">
                                         {project.badges.map((badge, index) => (
@@ -65,8 +67,6 @@ const Projects = () => {
                         </SwiperSlide>
                         ))}                    
                 </Swiper>
-                
-            </div>
         </section>
     );
 };

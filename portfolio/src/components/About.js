@@ -14,7 +14,7 @@ const About = () => {
                         <strong>I am a continuous learner.</strong> During my role as a <strong>DevOps Intern at ALLETE in 2024</strong>, I earned the <span className="highligheted-text">CKAD (Certified Kubernetes Application Developer)</span> certification to contribute more professionally to my team and organization.
                     </p>
                     <p className="about_content">
-                        <strong>I am passionate about enhancing and automating inefficient processes.</strong> While working as a front-desk staff on campus, I noticed a redundant manual workflow for maintenance work order submissions, which involved manually copying emails into Excel and PDF files for printing. To address this, I have <span className="highligheted-text">developed a web application to streamline and automate the entire workflow</span>, improving efficiency for staff.
+                        <strong>I am passionate about enhancing and automating inefficient processes.</strong> While working as a front-desk staff on campus, I noticed a redundant manual workflow for maintenance work order submissions, which involved manually copying emails into Excel and PDF files for printing. To address this, I have <span className="highligheted-text">developed a web application to streamline and automate the entire workflow</span>.
                     </p>
                 </div>
             </div>
