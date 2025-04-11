@@ -8,6 +8,8 @@ import "./mediaqueries.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+
 function Home() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/post/:id" element={<BlogPost />} />
       </Routes>
     </Router>
   );

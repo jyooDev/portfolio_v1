@@ -6,8 +6,7 @@ const About = () => {
                 <span className="line"></span>
                 <div id="text_container">
                     <p className="about_content">
-                        <span className="strong-text"><strong>I am a senior student in Computer Science and Mathematics</strong></span> 
-                        with a strong vision to pursue a career as a software developer. 
+                        <span className="strong-text"><strong>I am a senior student in Computer Science and Mathematics</strong></span> with a strong vision to pursue a career as a software developer. 
                         I have experience in the <span className="highligheted-text">entire software development lifecycle</span> and a passion for building impactful, efficient solutions.
                     </p>  
                     <p className="about_content">

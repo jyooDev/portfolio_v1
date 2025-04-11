@@ -20,4 +20,45 @@
         display: none;
     }
 
+    section{
+        margin: 0 3rem;
+    }
+    #profile .section__pic-container{
+        display: none;
+    }
+    #profile .section__text{
+        margin: 3rem 0rem;
+    }
+
+    #hamburger-nav{
+        display: flex;
+        width: 87%;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+        gap: 25px;
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .skill-container {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+        border-radius: 15px;
+        padding: 10px;  
+        transition: transform 0.3s, background-color 0.3s;
+        border: #e0e0e0 0.2rem solid;
+        height: 120px;
+    }
+
+    .skill-container img{
+        height: 50px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
 }

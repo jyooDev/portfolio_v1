@@ -1,0 +1,70 @@
+.tab_contents {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+.list_tab {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+border-bottom: 1px solid #ddd;
+padding-bottom: 1rem;
+margin: 0rem 8rem;
+}
+
+
+.list_tab li a{
+    text-decoration-line: none;
+    color: #aaa;
+    font-size: 1.3rem;
+    padding: 0.5rem 6rem;
+}
+
+.list_tab li a:hover,
+.list_tab li a.active {
+  color: #222;
+  font-weight: bold;
+}
+
+/* Post & Log */
+.wrap_post_list ul,
+.wrap_log_list ul {
+  list-style: none;
+  display: flex;
+  margin: 1rem 8rem;
+}
+.wrap_post_list li,
+.wrap_log_list li {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.wrap_post_list a,
+.wrap_log_list a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post_title,
+.log_title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post_summary,
+.log_summary {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.post_append,
+.log_append {
+  color: #aaa;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
