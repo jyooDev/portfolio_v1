@@ -3,6 +3,11 @@
     margin-bottom: 2rem;
   }
 
+.blog-nav{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 .list_tab {
 display: flex;
 justify-content: center;
@@ -28,10 +33,19 @@ margin: 0rem 8rem;
 }
 
 /* Post & Log */
+
+
+.no_post{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
 .wrap_post_list ul,
 .wrap_log_list ul {
   list-style: none;
   display: flex;
+  flex-direction: column;  
   margin: 1rem 8rem;
 }
 .wrap_post_list li,

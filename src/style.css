@@ -50,12 +50,6 @@ a, .btn{
 #desktop-nav{
     top: 0;
     width: 80%;
-    background: linear-gradient(
-    to bottom,
-    rgba(238, 238, 238, 1) 0%,
-    rgba(238, 238, 238, 0.5) 80%,
-    rgba(238, 238, 238, 0) 100%
-    );
     z-index: 999;
     padding: 1rem 2rem;
 
@@ -84,6 +78,7 @@ a{
     color: black;
     text-decoration: none;
     text-decoration-color: white;
+    cursor: pointer;
 }
 
 a:hover{
@@ -93,8 +88,16 @@ a:hover{
     text-decoration-color: #68587d;
 }
 
-.logo {
+.logo a {
     font-size: 2rem;
+    font-weight: 500;
+    color: #2C1B47;
+    transition: all 0.3s ease-in-out;    
+}
+
+.logo a:hover{
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* HAMBURGER MENU */
@@ -312,7 +315,6 @@ section{
     gap: 25px;
     max-width: 900px;
     margin: 0 auto;
-
 }
 
 .skill-container {
@@ -335,12 +337,14 @@ section{
     height: 50vh;
 }
 
+.mobile-project-list{
+    display: none;
+}
 .project-list{
     list-style: none;
 
 }
  .project-link {
-    user-select: none;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -379,7 +383,6 @@ section{
 }
 
 .project-link .project-title{
-
     color: #000;
     font-size: 1.19rem;
     font-weight: 600;
@@ -399,6 +402,22 @@ section{
     transition: all 300ms ease;
     color: #2C1B47;
 
+}
+
+/* MOBILE PROJECT */
+.mobile-project-list .project-link{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.project-link .project-image {
+    border-radius: 10x;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.mobile-project-list .project-link .badge{
+    padding: 5px 14px;
+    margin: 1rem 0;
 }
 /* PROJECT BADGE STYLING */
 .project-badge{

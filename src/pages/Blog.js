@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import posts from '../data/posts';
 import logs from '../data/logs';
 import '../Blog.css';
+import '../mediaqueries.css';
+import { Link as RouterLink } from 'react-router-dom';
 function Blog(){
 
     const [activeTab, setActiveTab] = useState('posts');
     return(
         <>
+            <div className="logo blog-nav"><RouterLink to="/">Jinah Yoo</RouterLink></div>
             <main>
                 <div className="tab_contents">
                     <ul id="contentsTab" className="list_tab">
@@ -27,6 +30,11 @@ function Blog(){
 
                      <div className="wrap_post_list">
                         <ul>
+                            <li>
+                                <div class='no_post'>
+                                This space will soon showcase my latest work. Stay connected!
+                                </div>
+                            </li>
                             { posts.map((post) => (
                                 <li>
                                     <Link to={`/blog/post/${post.id}`}>
@@ -48,6 +56,11 @@ function Blog(){
                     {activeTab === 'logs' && (
                      <div className="wrap_log_list">
                      <ul>
+                            <li>
+                                <div class='no_post'>
+                                This space will soon showcase my latest work. Stay connected!
+                                </div>
+                            </li>
                             { logs.map((log) => (
                                 <li>
                                     <Link to={`/blog/log/${log.id}`}>

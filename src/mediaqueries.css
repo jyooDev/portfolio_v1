@@ -39,12 +39,7 @@
     }
 
     .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-        gap: 25px;
-        max-width: 900px;
-        margin: 0 auto;
-        font-size: 12px;
+        width: 70%;
     }
 
     .skill-container {
@@ -60,5 +55,53 @@
         height: 50px;
         margin-top: 18px;
         margin-bottom: 18px;
+    }
+
+    #project
+    .swiper{
+        display: none;
+    }
+    .mobile-project-list{
+        display:contents;
+    }
+
+    #contact .title{
+        font-size: 2rem;
+    }
+
+    .contact-icon-box{
+        height: 50px;
+        width: 50px;
+        margin-right:10px;
+    }
+    .contact-info-container{
+        width: 87%;
+    }
+
+    .contact-info-inner-container{
+        font-size: 9px;
+    }
+    .contact-info-inner-container i{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .tab_contents{
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+        margin: 0rem 2rem;
+    }
+
+    .list_tab{
+        border-bottom: none !important;
+    }
+
+    .list_tab li a{
+        padding: 0 3.3rem !important;
+    }
+
+    .wrap_post_list ul,
+    .wrap_log_list ul {
+    margin: 1rem 2rem !important;
     }
 }

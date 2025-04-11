@@ -67,6 +67,22 @@ const Projects = () => {
                         </SwiperSlide>
                         ))}                    
                 </Swiper>
+
+                {projects.map((project) => (
+                        <div key={project.id} className="mobile-project-list">
+                            <a className="project-link" href={project.url}>
+                                <img className="project-image" src={project.img} alt={project.title} />
+                                <div className="project-badge">
+                                        {project.badges.map((badge, index) => (
+                                            <p key={index} className={`badge ${badge.toLowerCase().replace(" ", "-").replace("#", "")}-badge`}>
+                                            {badge}    </p>
+                                        
+                                        ))}
+                                </div>
+                                <h2 className="project-title">{project.title}</h2>
+                            </a>
+                        </div>
+                        ))}     
         </section>
     );
 };

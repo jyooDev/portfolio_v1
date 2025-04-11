@@ -13,6 +13,7 @@ import BlogPost from "./pages/BlogPost";
 function Home() {
   return (
     <>
+      <Navbar />
       <Profile />
       <About />
       <Projects />
@@ -24,7 +25,6 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />

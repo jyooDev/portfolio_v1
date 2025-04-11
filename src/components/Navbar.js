@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav>
             <div id="desktop-nav">
                 
-                <div className="logo"><RouterLink to="">Jinah Yoo</RouterLink></div>
+                <div className="logo"><RouterLink to="/">Jinah Yoo</RouterLink></div>
                 <ul className="nav-links">
                     <li><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink></li>
                     <li><ScrollLink to="project" smooth={true} duration={500}>Project</ScrollLink></li>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         <nav>
             <div id="hamburger-nav">
-                <div className="logo"><RouterLink to="">Jinah Yoo</RouterLink></div>
+                <div className="logo"><RouterLink to="/">Jinah Yoo</RouterLink></div>
                 <div className="hamburger-menu">
                     <div className={`hamburger-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
                         <span></span>
